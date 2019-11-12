@@ -1,6 +1,5 @@
 import sys
 import os
-import shutil
 n=int(sys.argv[1])
 
 base=os.getcwd()
