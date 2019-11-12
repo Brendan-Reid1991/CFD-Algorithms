@@ -44,6 +44,10 @@ PropagateCircuit and PositionDefinitions are modules required to run the algorit
 The others are:
 
 SimulatedAnnealing / ParallelTempering --- bare bones algorithms
+
 '' _DebuggingFile --- as above but with printed messages
+
 SA/PT_DataColleciton --- programs that iterate over multiple problems and multiple variables for data collection
-SA/PT_JustForFun --- an example file that takes varying arguments and prints out what the algorithm is doing, for explanatory purposes.
+
+SA/PT_JustForFun --- an example file that takes varying arguments and prints out what the algorithm is doing, for explanatory 
+purposes.
