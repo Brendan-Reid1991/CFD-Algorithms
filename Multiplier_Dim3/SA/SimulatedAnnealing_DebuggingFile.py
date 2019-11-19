@@ -312,7 +312,7 @@ def SA(data, initial_faults, MetSweeps, TempRange):
             break
         F+=1
 
-    if solnflag==1:
+    if solnflag==L_io:
         return(1,FalsePos,first_gs)
     else:
         return(0,FalsePos,first_gs)
