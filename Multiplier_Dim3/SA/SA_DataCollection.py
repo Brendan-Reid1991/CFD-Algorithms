@@ -21,7 +21,7 @@ ProblemInstances=json.load(io)
 faults=len(ProblemInstances[0][0])
 
 
-sweeplist=np.linspace(SweepMin,SweepMax,PointNum,dtype=int)
+sweeplist=np.linspace(SweepMin, SweepMax, PointNum, dtype=int)
 for sweep in sweeplist:
     F_c = 0
     P_s = 0
@@ -52,7 +52,9 @@ for sweep in sweeplist:
                 if element[0]==faults:
                     solns_correct_faults+=1
                     temporary_list.append(element[1])
-            if ttgs[-1][0]==faults:
+            if not ttgs:
+                final_ttgs = 0
+            else:
                 final_ttgs = ttgs[-1][1]
 
             success = success + solnflag
