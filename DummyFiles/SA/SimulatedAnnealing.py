@@ -117,7 +117,7 @@ def SA(data, initial_faults, MetSweeps, TempRange):
 
         solnflag = 0 # Solution flag set to zero initially
         FailSafe = 0 # Failsafe set to zero. This prevents infinite loops in the algorithm
-        if F>InitF:
+        if F>initial_faults:
             # If faults have increased since the program began, we choose one random fault to turn on;
             # i.e. move it from list (inactivefaults) to (activefaults)
             TurnOn=random.sample(inactivefaults,1)[0]
